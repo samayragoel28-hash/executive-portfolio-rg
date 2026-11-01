@@ -723,5 +723,18 @@ document.querySelectorAll(".tab-links").forEach(function (link, i) {
     });
 });
 </script>
+<script>
+if (window.matchMedia("(hover: none)").matches) {
+    var cards = document.querySelectorAll(".experience-list > div, .work");
+    cards.forEach(function (card) {
+        card.addEventListener("click", function () {
+            var wasOn = card.classList.contains("tapped");
+            cards.forEach(function (c) { c.classList.remove("tapped"); });
+            if (!wasOn) card.classList.add("tapped");
+        });
+    });
+}
+</script>
+    
 </body>
 </html>
