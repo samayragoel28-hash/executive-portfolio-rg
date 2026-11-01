@@ -1474,3 +1474,16 @@ form .button {
         height: 420px;
     }
 }
+
+
+/* Phone: tap karne par hover jaisa effect */
+.experience-list > div.tapped {
+    background: rgb(216, 113, 113);
+    transform: translateY(-10px);
+}
+
+.work.tapped img { transform: scale(1.1); }
+.work.tapped .layer { height: 100%; }
+
+.experience-list > div,
+.work { cursor: pointer; -webkit-tap-highlight-color: transparent; }
